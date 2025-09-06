@@ -23,6 +23,7 @@ public class Clasesita
     {
         return datito1 - datito2;
     }
+
     public int multiplicadita(){
         return datito1 * datito2;
     }

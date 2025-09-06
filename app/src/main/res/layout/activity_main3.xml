@@ -32,4 +32,10 @@
         android:text="division"
         android:id="@+id/botdivision"/>
 
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="regresar"
+        android:id="@+id/botreturn"/>
+
 </LinearLayout>

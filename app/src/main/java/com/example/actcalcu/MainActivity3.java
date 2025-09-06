@@ -15,6 +15,7 @@ import androidx.core.view.WindowInsetsCompat;
 
 public class MainActivity3 extends AppCompatActivity implements View.OnClickListener {
     Button botonsuma, botonresta, botonmulti, botondivi;
+    Button botregresar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,11 +27,13 @@ public class MainActivity3 extends AppCompatActivity implements View.OnClickList
         botonresta = findViewById(R.id.botresta);
         botonmulti = findViewById(R.id.botmultiplicacion);
         botondivi = findViewById(R.id.botdivision);
+        botregresar = findViewById(R.id.botreturn);
 
         botonsuma.setOnClickListener(this);
         botonresta.setOnClickListener(this);
         botonmulti.setOnClickListener(this);
         botondivi.setOnClickListener(this);
+        botregresar.setOnClickListener(this);
     }
 
     @Override
@@ -50,6 +53,9 @@ public class MainActivity3 extends AppCompatActivity implements View.OnClickList
 
         } else if (cadenita.equals("division")) {
             Intent intentito = new Intent(this, Division.class);
+            startActivity(intentito);
+        } else if (cadenita.equals("regresar")){
+            Intent intentito = new Intent(this, MainActivity2.class);
             startActivity(intentito);
         }
     }
