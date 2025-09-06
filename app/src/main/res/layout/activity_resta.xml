@@ -8,28 +8,28 @@
     android:orientation="vertical"
     android:layout_margin="30dp"
 
-    tools:context=".MainActivity3">
+    tools:context=".Resta">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/texto1"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/texto2"/>
 
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="suma"
-        android:id="@+id/botsuma"/>
+        android:text="resultado"
+        android:id="@+id/botresultado"/>
 
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="resta"
-        android:id="@+id/botresta"/>
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="multiplicacion"
-        android:id="@+id/botmultiplicacion"/>
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="division"
-        android:id="@+id/botdivision"/>
+        android:text="regresar"
+        android:id="@+id/botregreso"/>
 
 </LinearLayout>

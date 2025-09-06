@@ -13,7 +13,7 @@ import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
 public class MainActivity2 extends AppCompatActivity implements View.OnClickListener {
-    Button botregreso, bototrosaludo;
+    Button botregreso, bototrosaludo, botcalcu;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -22,9 +22,11 @@ public class MainActivity2 extends AppCompatActivity implements View.OnClickList
 
         botregreso = findViewById(R.id.botregresa);
         bototrosaludo = findViewById(R.id.botonsaludo);
+        botcalcu = findViewById(R.id.botoncalculadora);
 
         botregreso.setOnClickListener(this);
         bototrosaludo.setOnClickListener(this);
+        botcalcu.setOnClickListener(this);
 
     }
 
@@ -41,8 +43,12 @@ public class MainActivity2 extends AppCompatActivity implements View.OnClickList
         else
         if (cadenita.equals("regresar")){
             //a traves de este intent me voy a ir a la sig actividad
-            Intent intentito = new
-                    Intent(this, MainActivity.class);
+            Intent intentito = new Intent(this, MainActivity.class);
+            startActivity(intentito);
+        }
+        else
+        if (cadenita.equals("pasar a calculadora")){
+            Intent intentito = new Intent(this, MainActivity3.class);
             startActivity(intentito);
         }
     }
