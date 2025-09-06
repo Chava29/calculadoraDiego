@@ -10,6 +10,15 @@
 
     tools:context=".Multiplicacion">
 
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Multiplicacion"
+        android:textAppearance="@style/TextAppearance.Material3.HeadlineSmall"
+        android:paddingBottom="20dp"
+        android:layout_gravity="center_horizontal"/>
+
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -24,12 +33,16 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="resultado"
-        android:id="@+id/botresultado"/>
+        android:id="@+id/botresultado"
+        android:padding="18dp"
+        android:layout_marginTop="10dp"/>
 
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="regresar"
-        android:id="@+id/botregreso"/>
+        android:id="@+id/botregreso"
+        android:padding="18dp"
+        android:layout_marginTop="10dp"/>
 
 </LinearLayout>

@@ -10,22 +10,37 @@
 
     tools:context=".MainActivity2">
 
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Actividad 2"
+        android:textAppearance="@style/TextAppearance.Material3.HeadlineSmall"
+        android:paddingBottom="20dp"
+        android:layout_gravity="center_horizontal"/>
+
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="regresar"
-        android:id="@+id/botregresa"/>
+        android:id="@+id/botregresa"
+        android:padding="18dp"
+        android:layout_marginTop="10dp" />
 
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="otro saludo"
-        android:id="@+id/botonsaludo"/>
+        android:id="@+id/botonsaludo"
+        android:padding="18dp"
+        android:layout_marginTop="10dp"/>
 
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="pasar a calculadora"
-        android:id="@+id/botoncalculadora"/>
+        android:id="@+id/botoncalculadora"
+        android:padding="18dp"
+        android:layout_marginTop="10dp"/>
 
 </LinearLayout>
