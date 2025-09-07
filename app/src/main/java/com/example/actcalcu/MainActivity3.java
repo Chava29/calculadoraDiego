@@ -4,18 +4,13 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-import android.widget.EditText;
-import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.graphics.Insets;
-import androidx.core.view.ViewCompat;
-import androidx.core.view.WindowInsetsCompat;
 
 public class MainActivity3 extends AppCompatActivity implements View.OnClickListener {
-    Button botonsuma, botonresta, botonmulti, botondivi;
-    Button botregresar;
+    Button bots, botr, botm, botdv;
+    Button botgreso;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,17 +18,17 @@ public class MainActivity3 extends AppCompatActivity implements View.OnClickList
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_main3);
 
-        botonsuma = findViewById(R.id.botsuma);
-        botonresta = findViewById(R.id.botresta);
-        botonmulti = findViewById(R.id.botmultiplicacion);
-        botondivi = findViewById(R.id.botdivision);
-        botregresar = findViewById(R.id.botreturn);
+        bots = findViewById(R.id.botsuma);
+        botr = findViewById(R.id.botresta);
+        botm = findViewById(R.id.botmultiplicacion);
+        botdv = findViewById(R.id.botdivision);
+        botgreso = findViewById(R.id.botreturn);
 
-        botonsuma.setOnClickListener(this);
-        botonresta.setOnClickListener(this);
-        botonmulti.setOnClickListener(this);
-        botondivi.setOnClickListener(this);
-        botregresar.setOnClickListener(this);
+        bots.setOnClickListener(this);
+        botr.setOnClickListener(this);
+        botm.setOnClickListener(this);
+        botdv.setOnClickListener(this);
+        botgreso.setOnClickListener(this);
     }
 
     @Override

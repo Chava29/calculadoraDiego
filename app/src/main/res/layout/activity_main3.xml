@@ -10,51 +10,32 @@
 
     tools:context=".MainActivity3">
 
-    <TextView
-        android:id="@+id/title"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Calculadora"
-        android:textAppearance="@style/TextAppearance.Material3.HeadlineSmall"
-        android:paddingBottom="20dp"
-        android:layout_gravity="center_horizontal"/>
-
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="suma"
-        android:id="@+id/botsuma"
-        android:padding="20dp"
-        android:layout_marginTop="10dp"/>
+        android:id="@+id/botsuma"/>
 
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="resta"
-        android:id="@+id/botresta"
-        android:padding="20dp"
-        android:layout_marginTop="10dp"/>
+        android:id="@+id/botresta"/>
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="multiplicacion"
-        android:id="@+id/botmultiplicacion"
-        android:padding="20dp"
-        android:layout_marginTop="10dp"/>
+        android:id="@+id/botmultiplicacion"/>
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="division"
-        android:id="@+id/botdivision"
-        android:padding="20dp"
-        android:layout_marginTop="10dp"/>
+        android:id="@+id/botdivision"/>
 
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="regresar"
-        android:id="@+id/botreturn"
-        android:padding="20dp"
-        android:layout_marginTop="10dp"/>
+        android:id="@+id/botreturn"/>
 
 </LinearLayout>

@@ -8,24 +8,21 @@ import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.graphics.Insets;
-import androidx.core.view.ViewCompat;
-import androidx.core.view.WindowInsetsCompat;
 
 public class MainActivity
         extends AppCompatActivity implements View.OnClickListener {
-    Button botsaludo, botoact;
+    Button botonsaludar, botonsigact;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_main);
 
-        botsaludo = findViewById(R.id.boton);
-        botoact = findViewById(R.id.otroboton);
+        botonsaludar = findViewById(R.id.boton);
+        botonsigact = findViewById(R.id.otroboton);
 
-        botsaludo.setOnClickListener(this);
-        botoact.setOnClickListener(this);
+        botonsaludar.setOnClickListener(this);
+        botonsigact.setOnClickListener(this);
     }
 
     @Override
@@ -40,7 +37,6 @@ public class MainActivity
         }
         else
             if (cadenita.equals("otra actividad")){
-                //a traves de este intent me voy a ir a la sig actividad
                 Intent intentito = new
                         Intent(this, MainActivity2.class);
                 startActivity(intentito);

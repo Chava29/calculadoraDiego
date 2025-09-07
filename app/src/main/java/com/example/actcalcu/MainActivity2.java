@@ -8,33 +8,27 @@ import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.graphics.Insets;
-import androidx.core.view.ViewCompat;
-import androidx.core.view.WindowInsetsCompat;
 
 public class MainActivity2 extends AppCompatActivity implements View.OnClickListener {
-    Button botregreso, bototrosaludo, botcalcu;
+    Button botonreturn, botonotrosaludo, botonparacal;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_main2);
 
-        botregreso = findViewById(R.id.botregresa);
-        bototrosaludo = findViewById(R.id.botonsaludo);
-        botcalcu = findViewById(R.id.botoncalculadora);
-
-        botregreso.setOnClickListener(this);
-        bototrosaludo.setOnClickListener(this);
-        botcalcu.setOnClickListener(this);
-
+        botonreturn = findViewById(R.id.botregresa);
+        botonotrosaludo = findViewById(R.id.botonsaludo);
+        botonparacal = findViewById(R.id.botoncalculadora);
+        botonreturn.setOnClickListener(this);
+        botonotrosaludo.setOnClickListener(this);
+        botonparacal.setOnClickListener(this);
     }
 
     @Override
     public void onClick(View v) {
         String cadenita = ((Button)v).getText().toString();
         if (cadenita.equals("otro saludo")){
-            //creamos el objeto Saluditos para que de la calse Saluditos nos la "regrese"
             Saluditos saludito = new Saluditos();
 
             Toast.makeText(this,
@@ -42,12 +36,11 @@ public class MainActivity2 extends AppCompatActivity implements View.OnClickList
         }
         else
         if (cadenita.equals("regresar")){
-            //a traves de este intent me voy a ir a la sig actividad
             Intent intentito = new Intent(this, MainActivity.class);
             startActivity(intentito);
         }
         else
-        if (cadenita.equals("pasar a calculadora")){
+        if (cadenita.equals("calculadora")){
             Intent intentito = new Intent(this, MainActivity3.class);
             startActivity(intentito);
         }
