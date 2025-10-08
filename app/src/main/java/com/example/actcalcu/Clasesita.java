@@ -1,34 +1,33 @@
 package com.example.actcalcu;
 
-public class Clasesita
-{
-    private int datito1;
-    private int datito2;
+public class Clasesita {
+    private double datito1;
+    private double datito2;
 
-    public void setDatito1(int datito1)
-    {
+    public void setDatito1(double datito1) {
         this.datito1 = datito1;
     }
 
-    public void setDatito2(int datito2)
-    {
+    public void setDatito2(double datito2) {
         this.datito2 = datito2;
     }
 
-    public int sumita(){
+    public double sumita() {
         return datito1 + datito2;
     }
 
-    public int restita()
-    {
+    public double restita() {
         return datito1 - datito2;
     }
 
-    public int multiplicadita(){
+    public double multiplicadita() {
         return datito1 * datito2;
     }
 
-    public int divisioncita(){
+    public double divisioncita() {
+        if (Math.abs(datito2) < 1e-9) {
+            throw new IllegalArgumentException("Division entre cero");
+        }
         return datito1 / datito2;
     }
 }
