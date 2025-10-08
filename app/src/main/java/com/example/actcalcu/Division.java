@@ -1,54 +1,32 @@
 package com.example.actcalcu;
 
-import android.content.Intent;
-import android.os.Bundle;
-import android.view.View;
-import android.widget.Button;
-import android.widget.EditText;
-import android.widget.Toast;
-
-import androidx.activity.EdgeToEdge;
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.graphics.Insets;
-import androidx.core.view.ViewCompat;
-import androidx.core.view.WindowInsetsCompat;
-
-public class Division extends AppCompatActivity implements View.OnClickListener {
-    EditText textito1, textito2;
-    Button botresultado, botregresa;
+public class Division extends BaseOperationActivity {
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        EdgeToEdge.enable(this);
-        setContentView(R.layout.activity_division);
-
-        textito1 = findViewById(R.id.texto1);
-        textito2 = findViewById(R.id.texto2);
-        botresultado = findViewById(R.id.botresultado);
-        botregresa = findViewById(R.id.botregreso);
-
-        botresultado.setOnClickListener(this);
-        botregresa.setOnClickListener(this);
-
+    protected int getLayoutResId() {
+        return R.layout.activity_division;
     }
 
     @Override
-    public void onClick(View view) {
-        String cadenita = ((Button)view).getText().toString();
-        Clasesita objetito = new Clasesita();
+    protected String getOperationTitle() {
+        return getString(R.string.division_title);
+    }
 
-        objetito.setDatito1(Integer.parseInt(textito1.getText().toString()));
-        objetito.setDatito2(Integer.parseInt(textito2.getText().toString()));
+    @Override
+    protected String getOperationSymbol() {
+        return "÷";
+    }
 
-        if (cadenita.equals("resultado")){
-            Toast.makeText(this, "El resultado es: " + objetito.divisioncita(), Toast.LENGTH_SHORT).show();
+    @Override
+    protected double resolveOperation(double first, double second) {
+        if (Math.abs(second) < 1e-9) {
+            throw new IllegalArgumentException(getString(R.string.error_division_by_zero));
         }
-        else
-            if (cadenita.equals("regresar")){
-                Intent intentito = new Intent(this, MainActivity3.class);
-                startActivity(intentito);
-            }
+        return first / second;
+    }
 
+    @Override
+    protected void onResultCalculated(double first, double second, double result) {
+        showMessage(getString(R.string.result_template, formatNumber(result)));
     }
 }

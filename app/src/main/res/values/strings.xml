@@ -1,3 +1,54 @@
 <resources>
     <string name="app_name">ActCalcu</string>
+
+    <string name="main_title">Hola de nuevo 👋</string>
+    <string name="main_subtitle">Explora las actividades disponibles</string>
+    <string name="action_greet">Enviar saludo</string>
+    <string name="action_go_to_second">Ir a otra actividad</string>
+    <string name="tip_button">Consejo del día</string>
+    <string name="tip_message">Recuerda que puedes compartir y guardar tus resultados desde la calculadora mejorada.</string>
+    <string name="greeting_toast">%1$s</string>
+
+    <string name="second_title">¿Qué te gustaría hacer?</string>
+    <string name="action_back">Regresar</string>
+    <string name="action_other_greet">Otro saludo</string>
+    <string name="action_open_calculator">Abrir calculadora</string>
+
+    <string name="calculator_title">Calculadora inteligente</string>
+    <string name="calculator_description">Elige la operación que necesitas o consulta tu historial.</string>
+    <string name="operation_sum">Suma</string>
+    <string name="operation_subtraction">Resta</string>
+    <string name="operation_multiplication">Multiplicación</string>
+    <string name="operation_division">División</string>
+    <string name="operation_history">Historial</string>
+    <string name="operation_return">Volver</string>
+
+    <string name="hint_first_number">Primer número</string>
+    <string name="hint_second_number">Segundo número</string>
+    <string name="action_calculate">Calcular</string>
+    <string name="action_clear">Limpiar</string>
+    <string name="action_share">Compartir</string>
+    <string name="result_placeholder">Aún no hay resultado</string>
+    <string name="result_template">Resultado: %1$s</string>
+    <string name="cleared_message">Campos reiniciados</string>
+    <string name="error_empty_field">Escribe un número</string>
+    <string name="error_invalid_number">El número no es válido</string>
+    <string name="error_division_by_zero">No se puede dividir entre cero</string>
+    <string name="error_no_result">Calcula algo primero</string>
+    <string name="share_result_template">Resultado de la %1$s: %2$s</string>
+    <string name="share_title">Compartir resultado</string>
+    <string name="history_entry_template">%1$s %2$s %3$s = %4$s</string>
+
+    <string name="sum_title">Suma</string>
+    <string name="resta_title">Resta</string>
+    <string name="multi_title">Multiplicación</string>
+    <string name="division_title">División</string>
+
+    <string name="history_title">Historial</string>
+    <string name="history_hint">Toca una operación para copiarla al portapapeles.</string>
+    <string name="history_empty">Aún no has realizado operaciones.</string>
+    <string name="history_clear">Borrar historial</string>
+    <string name="history_cleared">Historial eliminado</string>
+    <string name="history_copied">Operación copiada</string>
+    <string name="history_clip_label">Operación de calculadora</string>
 </resources>

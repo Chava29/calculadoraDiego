@@ -2,4 +2,15 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+
+    <color name="primaryColor">#6750A4</color>
+    <color name="onPrimary">#FFFFFFFF</color>
+    <color name="secondaryColor">#625B71</color>
+    <color name="secondaryContainer">#E8DEF8</color>
+    <color name="surfaceColor">#FFFCFF</color>
+    <color name="surfaceVariant">#E7E0EC</color>
+    <color name="onSurface">#1C1B1F</color>
+    <color name="onSurfaceVariant">#49454F</color>
+    <color name="gradient_start">#A18CD1</color>
+    <color name="gradient_end">#FBC2EB</color>
 </resources>
